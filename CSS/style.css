@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Screenshot\ \(4\)\ \(1\).png);
+    background-size: cover; */
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Screenshot\ \(4\)\ \(1\).png);
+    background-size: cover;
+}
+/* /////////////////////////////////////// */
+.number{
+    width: 400px;
+    height: 70px;
+    background-color: rgb(53, 53, 50);
+    border: 4px solid rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+.number::after{
+    content: "";
+    animation-name: number-1;
+    animation-duration: 10s;
+}
+@keyframes number-1{
+    0%{content: "00:10";}
+    5%{content: "00:09";}
+    10%{content: "00:08";}
+    15%{content: "00:07";}
+    20%{content: "00:06";}
+    25%{content: "winner";}
+    30%{content: "winner";}
+    35%{content: "00:03";}
+    40%{content: "00:02";}
+    45%{content: "00:01";}
+    50%{content: "Time is up";}
+    55%{content: "winner"}
+    60%{content: "winner"}
+    65%{content: "The blue car won"}
+    70%{content: "winner"}
+    75%{content: "winner"}
+    80%{content: "The"}
+    85%{content: "The blue"}
+    90%{content: "The blue car"}
+    95%{content: "The blue car won"}
+    100%{content: "winner"}
+    100%{content: "The blue car won"}
+}
+/* /////////////////////////////////////// */
+.parent-car{
+    position: relative;
+    top: 325px;
+    /* left: 1000px; */
+}
+/* --------------------------------------- {1 --------------------------------------- */
+.car1{
+    position: relative;
+    animation-name: car1;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+}
+@keyframes car1{
+    0%{left: 0;}
+
+    
+    100%{left: 1000px;}
+}
+.car1-1-11 , .car1-1-12{
+    position: absolute;
+    top: 77px;
+    left: 65px;
+}
+.car1-1-12{
+    left: 240px;
+}
+
+.car1-1-11 , .car1-1-12{
+    animation-name: car1-1-2;
+    animation-duration: 4s;
+    /* transition: 2s; */
+}
+@keyframes car1-1-2{
+    0%{transform: rotate(360000deg);}
+
+    100%{transform: rotate(0deg);}
+}
+/* --------------------------------------- 1} --------------------------------------- */
+/* --------------------------------------- {2 --------------------------------------- */
+.car2{
+    position: relative;
+    animation-name: car2;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+}
+@keyframes car2{
+    0%{left: 0;}
+
+    
+    100%{left: 1000px;}
+}
+.car2-1-11 , .car2-1-12{
+    position: absolute;
+    top: 35px;
+    left: 57px;
+}
+.car2-1-12{
+    left: 242px;
+    top: 32px;
+}
+
+.car2-1-11 , .car2-1-12{
+    animation-name: car2-1-2;
+    animation-duration: 5s;
+    /* transition: 2s; */
+}
+@keyframes car2-1-2{
+    0%{transform: rotate(360000deg);}
+
+    100%{transform: rotate(0deg);}
+}
+/* --------------------------------------- 2} --------------------------------------- */
+/* --------------------------------------- {3 --------------------------------------- */
+.car3{
+    position: relative;
+    animation-name: car3;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+}
+@keyframes car3{
+    0%{left: 0;}
+
+    
+    100%{left: 1000px;}
+}
+
+.car3-1-11 , .car3-1-12{
+    position: absolute;
+    top: 55px;
+    left: 40px;
+}
+.car3-1-12{
+    left: 247px;
+    top: 55px;
+}
+
+.car3-1-11 , .car3-1-12{
+    animation-name: car3-1-2;
+    animation-duration: 3s;
+    /* transition: 2s; */
+}
+@keyframes car3-1-2{
+    0%{transform: rotate(360000deg);}
+
+    100%{transform: rotate(0deg);}
+}
+/* --------------------------------------- 3} --------------------------------------- */
+.name{
+    font-size: 35px;
+    color: black;
+}
